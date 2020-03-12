@@ -1,2 +1,0 @@
-# KontrolSite
-Website for Kontrol
