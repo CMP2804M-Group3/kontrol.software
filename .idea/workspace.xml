@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7556a86-cdc2-43c9-b937-43973a1b94ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PlaceholderVideo.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/kontrol_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/laptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/wifi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Placeholder ad.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlaceholderVideo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +39,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assets" />
     </key>
@@ -58,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583493477454</updated>
       <workItem from="1583493479883" duration="1661000" />
-      <workItem from="1584018609675" duration="11196000" />
+      <workItem from="1584018609675" duration="13122000" />
     </task>
     <servers />
   </component>

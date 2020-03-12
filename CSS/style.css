@@ -69,7 +69,7 @@ hr {
 	display: flex;
 }
 
-#bigPhoneContainer{
+#introContainer{
 	height: 20vm;
 	background-image: linear-gradient(to bottom left, var(--lightBlue), var(--darkBlue));
 	background-repeat: no-repeat;
@@ -81,37 +81,37 @@ hr {
 }
 
 
-.phoneTextCombo{
+.introTextCombo{
 	display: flex;
 	justify-content: center;
 }
 
 
-.phoneTextCombo img{
+.introTextCombo img{
 	float: right;
 	padding-left: 2em;
 	padding-top: 2em;
 }
 
-.phoneInfo{
+.intro{
 	float: right;
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
-.phoneInfo h1, h2{
+.intro h1, h2{
 	font-size: 80px;
 	font-weight: lighter;
 	margin: 0;	
 }
-.phoneInfo h1{
+.intro h1{
 	color: white;
 }
-.phoneInfo h2{
+.intro h2{
 	color: white;	
 	text-align: center;
 }
-.phoneInfo p{
-	text-align: left;
+.intro p{
+	text-align: center;
 }
 .textBox{
 	width: 35em;
@@ -123,8 +123,6 @@ hr {
     height: 100%;
     vertical-align: middle;
 }
-
-
 
 #features{
 	background: rgb(52, 52, 52);
@@ -145,7 +143,7 @@ hr {
 }
 
 
-.figures{
+.showcase{
 	width: 75%;
 	max-width: 1920px; 
 	margin: 0 auto;
@@ -154,28 +152,26 @@ hr {
 }
 
 @media only screen and (max-width: 1670px) {
-    .figures{
+    .showcase{
     	width: 100%;
     }
 }
 @media only screen and (max-width: 1240px) {
-    #team{
-    	height: 75em !important;
-    }
-    .figures{
+
+    .showcase{
     	display: block !important;
     }
 
     #features{
     	height: 80em !important;
     }
-    #fig1, #fig2, #fig3{
+    #feat1, #feat2, #feat3{
 	    all: initial;
 	  * {
 	    all: unset;		
 	  }
 	}
-	#fig1, #fig2, #fig3{
+	#feat1, #feat2, #feat3{
 		display: block;	
 		background: rgb(62, 62, 62);
 		text-align: center;
@@ -192,33 +188,33 @@ hr {
 }
 
 @media only screen and (max-width: 1500px) {
-	.phoneInfo h1, h2{
+	.intro h1, h2{
 		font-size: 60px;	
 	}
-	.phoneInfo h1{
+	.intro h1{
 		text-align: initial;
 	}
-	.phoneTextCombo img{
+	.introTextCombo img{
 		padding-left: 0%;
 		padding-top: 4%;
 	}
 }
 @media only screen and (max-width: 1450px) {
-	.phoneInfo h1, h2{
+	.intro h1, h2{
 		font-size: 64px;	
 	}
-	.phoneInfo h1{
+	.intro h1{
 		text-align: left;
 	}
-	.phoneInfo h2{
+	.intro h2{
 		text-align: center;
 	}
-	.phoneInfo p{
+	.intro p{
 		font-size: 16px;	
 		text-align: center;		
 	}
-	.phoneInfo{padding-left: 0 !important;}
-	.phoneTextCombo img{
+	.intro{padding-left: 0 !important;}
+	.introTextCombo img{
 		display: none;
 	}
 
@@ -229,13 +225,13 @@ hr {
 }
 
 @media only screen and (max-width: 1300px) {
-	.phoneInfo h1, h2{
+	.intro h1, h2{
 		font-size: 60px;	
 	}
-	.phoneInfo h1{
+	.intro h1{
 		text-align: initial;
 	}
-	.phoneTextCombo img{
+	.introTextCombo img{
 		padding-left: 0%;
 		padding-top: 4%;
 		padding-right: 2%;
@@ -244,87 +240,29 @@ hr {
 
 
 @media only screen and (max-width: 1030px) {
-    #team{
-    	height: 125em !important;
-    }
-    .figures{
+    .showcase{
     	display: block;
     }
 }
 
-@media only screen and (max-width: 710px) {
-	#quote h1{
-		font-size: 42px !important;
-	}
-}
-@media only screen and (max-width: 620px) {
-	#quote h3{
-		font-size: 42px !important;
-	}
-	#quote h2{
-		font-size: 24px !important;
-	}
-	#quote h1{
-		font-size: 32px !important;
-	}
-	.phoneInfo h1, h2{
-		text-align: center !important;
-	}
-}
-@media only screen and (max-width: 450px) {
-	#quote{
-		height: 20em !important;
-	}
-	#quote h3{
-		font-size: 32px !important;
-	}
-	#quote h2{
-		font-size: 16px !important;
-	}
-	#quote h1{
-		font-size: 24px !important;
-	}
-}
-
-@media only screen and (max-width: 342px) {
-	#quote{
-		height: 18em !important;
-	}
-	#quote h3{
-		font-size: 28px !important;
-	}
-	#quote h2{
-		font-size: 14px !important;
-	}
-	#quote h1{
-		font-size: 20px !important;
-	}
-}
-
-
 @media only screen and (max-width: 600px) {
-	#fig1, #fig2, #fig3{
+	#feat1, #feat2, #feat3{
 		width: 70%;
 	}
 }
 
-@media only screen and (max-width: 710px) {
-
-}
 
 @media only screen and (max-width: 550px) {
 	.textBox{
 		width: auto;
 	}
 
-	#redBorder{
-		width: 70% !important;
-	}
+
 }
 
 
 figure{
-	display: inline-block;	
+	display: inline-block;
 	background: rgb(62, 62, 62);
 	width: 400px;
 	text-align: center;
@@ -335,21 +273,17 @@ figure{
 
 }
 
-#fig1{
+#feat1{
 	border-bottom-width: 0.5em;
-	border-bottom-color: #FCCF6B;
+	border-bottom-color: var(--lightBlue);
 }
-#fig2{
+#feat2{
 	border-bottom-width: 0.5em;
-	border-bottom-color: #FF6F70;
+	border-bottom-color: var(--lightBlue);
 }
-#redBorder{
+#feat3{
 	border-bottom-width: 0.5em;
-	border-bottom-color: #FF6F70;
-}
-#fig3{
-	border-bottom-width: 0.5em;
-	border-bottom-color: #A3D16B;
+	border-bottom-color: var(--lightBlue);
 }
 
 figure h1{
@@ -375,13 +309,14 @@ figure p {
 	position: relative;
 }
 
-.video video{
+#ad{
  	position: absolute;
   	left: 50%;
   	top: 50%;
-  	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	height: 75%;
+	width: 60%;
+	height:100%;
+	border: 0;
 }
 
 #download{
