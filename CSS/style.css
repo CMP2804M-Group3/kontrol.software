@@ -161,7 +161,7 @@ hr {
     }
 
     #features{
-    	height: 80em !important;
+    	height: auto !important;
     }
     #feat1, #feat2, #feat3{
 	    all: initial;
@@ -180,8 +180,6 @@ hr {
 		border-width: 0;
 		margin: 0 auto;
 		margin-top: 2em;
-		margin-bottom: 2em;
-
 	}
 }
 
@@ -243,7 +241,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
 	.headline {
 		justify-content: center;
 		display: inline;
@@ -287,6 +285,9 @@ hr {
 		font-size: 10vw;
 		padding-top: 1vw;
 
+	}
+	#features p{
+		font-size: 5vw;
 	}
 
 	#feat1, #feat2, #feat3{
@@ -372,6 +373,8 @@ figure p {
 	height: auto;
 	position: relative;
 	margin-bottom: 0;
+	width: 100%;
+	margin: auto;
 }
 
 #download h2{
