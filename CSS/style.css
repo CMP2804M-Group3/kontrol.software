@@ -25,6 +25,23 @@ body{
 	flex-direction: column;
 }
 
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+a{
+	text-decoration: none;
+	color: unset;
+	outline: none;
+
+}
+
 #desktop-header{
 	color: #fff;
 	font-size: 14px;
@@ -106,6 +123,7 @@ body{
 
 #mobile-header .right-links input {
 	display: none;
+
 }
 .hamburger{
 	font-size: 20px;
@@ -114,8 +132,11 @@ body{
 
 #mobile-header .right-links input:checked ~ li{
 	display: block;
+	opacity: 1;
+	animation: MoveUpDown 5s ease-in-out infinite;
+
 	/*border: black 2px solid;*/
-	width: 99.8vw;
+	width: 100vw;
 	position: relative;
 	right: calc(100vw - 34px);
 	top: 15px;
@@ -165,6 +186,7 @@ body{
 	bottom: 0;
 	right: 0;
 	overflow: hidden;
+	z-index: -1;
 }
 
 #big-kirsty img{
@@ -251,3 +273,133 @@ body{
 
 	height: 100%;
 }
+
+#kontrol-image {
+	position: relative;
+	animation: MoveUpDown 5s ease-in-out infinite;
+	max-width: 600px;
+	max-height: 400px;
+	width: 100%;
+	height: 100%;
+}
+@keyframes MoveUpDown {
+	0%, 100% {
+		bottom: 0;
+	}
+	50% {
+		bottom: 10px;
+	}
+}
+
+#download-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 60px;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1150px;
+}
+
+#download-text-button{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 35%;
+
+
+}
+#download-text-button #download-button button{
+	margin-top: 20px;
+	margin-left: 0;
+}
+#download-text-button h1{
+	color: white;
+	font-size: 26px;
+}
+#download-text-button h3{
+	color: rgba(255,255,255,0.7);
+	font-size: 12px;
+}
+
+#kontrol-image-container{
+	position: relative;
+}
+#image-shadow{
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+	max-width: 628px;
+	height: 58px;
+	background: radial-gradient(ellipse 38% 30%,rgba(0,0,0,.16),rgba(0,0,0,0));
+	animation: floatShadow 2.3s infinite forwards;
+}
+
+#other-downloads{
+
+	display: flex;
+	width: 100%;
+	height: 100%;
+	max-width: 1600px;
+	max-height: 360px;
+	margin: 40px auto;
+	padding-bottom: 20px;
+}
+
+.dl-card{
+	position: relative;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 3px rgba(0,0,0,.2);
+	transition: all .8s ease;
+	width: 100%;
+	max-width: 400px;
+	flex-basis: 400px;
+	height: 350px;
+	margin: 0 10px;
+	text-align: center;
+}
+
+.dl-card h1{
+	color: var(--blue);
+	font-size: 28px;
+	font-weight: 300;
+	margin-top: 50px;
+	transition: margin-top .5s;
+
+}
+.dl-button{
+	opacity: 0;
+	position: absolute;
+	top: 20%;
+	transition: all .5s;
+	z-index: -1;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+.dl-card:hover > h1{
+	margin-top: 20px;
+}
+.dl-card:hover > a {
+	opacity: 1;
+	z-index: 20;
+	top: calc(20% + 5px);
+}
+.dl-card svg{
+	position: absolute;
+	max-width: 150px;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%)
+}
+.dl-card svg path{
+	transition: fill .5s;
+
+}
+
+.dl-card:hover > svg path {
+	fill: var(--blue);
+}
+

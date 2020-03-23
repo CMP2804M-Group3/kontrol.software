@@ -5,6 +5,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="CSS/style.css">
 		<link rel="stylesheet" type="text/css" href="CSS/mediaQueries.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src = "script.js"></script>
 		<script src="https://kit.fontawesome.com/9bfa0f1f0f.js" crossorigin="anonymous"></script>
 		<title>Kontrol - Control Kodi with your body!</title>
 	</head>
@@ -14,12 +16,15 @@
 			<div id = "desktop-header">
 				<nav>
 					<div class="header-logo">
+						<a href="index.html">
 						<img class = "headerImg" src="Assets/kontrol_logo.svg" alt="Kontrol Logo">
 						<span class = "title">Kontrol</span>
+						</a>
+
 					</div>
 					<ul class= "header-links left-links">
 						<li>
-							<a>Downloads</a>
+							<a href="downloads.html">Downloads</a>
 						</li>
 						<li>
 							<a>Help</a>
@@ -33,10 +38,10 @@
 					</ul>
 					<ul class= "header-links right-links">
 						<li>
-							<a href="#" class="fab fa-github"></a>
+							<a href="https://github.com/CMP2804M-Group3/kontrol" class="fab fa-github"></a>
 						</li>
 						<li>
-							<a href="#" class="fas fa-envelope"></a>
+							<a href="mailto:joepittsy@gmail.com?subject=Kontrol" class="fas fa-envelope"></a>
 						</li>
 					</ul>
 				</nav>
@@ -54,8 +59,8 @@
 						<label for="burger-checkbox" class="hamburger">
 							<a id = "open-burger" class="fas fa-bars "></a>
 						</label>
-						<li>
-							<a>Downloads</a>
+						<li >
+							<a href ="downloads.html" >Downloads</a>
 						</li>
 						<li>
 							<a>Help</a>
@@ -78,7 +83,9 @@
 				<a id = "download-button" href = "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.msi" download>
 					<button  class="whiteButton"> Download</button>
 				</a>
-				<button class="blueButton">See all releases</button>
+				<a href="downloads.html">
+					<button class="blueButton">See all releases</button>
+				</a>
 			</div>
 
 		</div>
@@ -98,40 +105,9 @@
 
 	</body>
 </html>
-<script
-		src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-		crossorigin="anonymous"></script>
 
 <script>
 	$(document).ready(function(){
-
-		$('#open-burger').click(() =>{
-			if($("#burger-checkbox").is(":not(:checked)")){
-				$("#mobile-header").css("background-color", "white");
-				$("#mobile-header").css("color", "rgba(0,0,0,0.9)");
-				$(".headerImg").css("filter", "invert(1)")
-
-
-			}
-
-			else if($("#burger-checkbox").is(":checked")){
-
-				$("#mobile-header").css("background-color", "initial");
-				$("#mobile-header").css("color", "white");
-				$(".headerImg").css("filter", "invert(0)")
-
-
-
-			}
-
-		});
-		let isMac = navigator.platform.toUpperCase().indexOf('MAC')!==-1;
-		let isWindows = navigator.platform.toUpperCase().indexOf('WIN')!==-1;
-		let isLinux = navigator.platform.toUpperCase().indexOf('LINUX')!==-1;
-
-
-
 
 		if (isMac){
 			$("#download-button")[0].href = "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.app.zip";

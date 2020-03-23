@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7556a86-cdc2-43c9-b937-43973a1b94ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/downloads.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/mediaQueries.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/mediaQueries.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -32,16 +37,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Assets" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Assets" />
-    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -56,6 +67,7 @@
       <workItem from="1583493479883" duration="1661000" />
       <workItem from="1584018609675" duration="13735000" />
       <workItem from="1584185446182" duration="2697000" />
+      <workItem from="1584908473948" duration="13318000" />
     </task>
     <servers />
   </component>
@@ -67,5 +79,21 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.777@0.23.1280.777" timestamp="1584024165494" />
+    <state x="692" y="739" width="525" height="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1584915333216">
+      <screen x="0" y="402" width="1920" height="1004" />
+    </state>
+    <state x="692" y="739" width="525" height="299" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.402.1920.1004/1920.0.1080.1920@0.402.1920.1004" timestamp="1584915333216" />
+    <state x="449" y="525" key="SettingsEditor" timestamp="1584913950425">
+      <screen x="0" y="402" width="1920" height="1004" />
+    </state>
+    <state x="449" y="525" key="SettingsEditor/0.402.1920.1004/1920.0.1080.1920@0.402.1920.1004" timestamp="1584913950425" />
+    <state x="100" y="474" width="1720" height="832" key="dock-window-1" timestamp="1584920032998">
+      <screen x="0" y="402" width="1920" height="1004" />
+    </state>
+    <state x="100" y="474" width="1720" height="832" key="dock-window-1/0.402.1920.1004/1920.0.1080.1920@0.402.1920.1004" timestamp="1584920032998" />
+    <state x="100" y="474" width="1720" height="832" key="dock-window-2" timestamp="1584920032999">
+      <screen x="0" y="402" width="1920" height="1004" />
+    </state>
+    <state x="100" y="474" width="1720" height="832" key="dock-window-2/0.402.1920.1004/1920.0.1080.1920@0.402.1920.1004" timestamp="1584920032999" />
   </component>
 </project>

@@ -70,3 +70,70 @@
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .dl-card{
+        margin: 0;
+        box-shadow: 0 0 3px rgba(0,0,0,.2);
+    }
+}
+@media screen and (max-width: 1040px) {
+    #kontrol-image-container{
+        display: none;
+    }
+
+    #download-text-button{
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    #download-text-button a button{
+        margin-right: 0;
+    }
+    #other-downloads{
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dl-card{
+        margin: 20px;
+        max-height: 250px;
+        flex-shrink: 0;
+        flex: 1 1 30%;
+    }
+
+    .dl-card h1{
+        margin-top: 20px;
+    }
+    .dl-card svg{
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .dl-card{
+        flex: initial;
+    }
+    .dl-card svg{
+        display: none;
+    }
+
+    .dl-card a{
+        opacity: 1;
+        top: 45%;
+        z-index: 20;
+    }
+
+    .dl-card{
+        flex-grow: 1;
+        max-height: 150px;
+        margin: 10px;
+    }
+    .dl-card:hover > a {
+        top: 45%;
+    }
+
+
+}
