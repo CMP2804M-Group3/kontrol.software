@@ -542,20 +542,22 @@ a {
   justify-content: center;
   width: 80%;
 }
+#download-text-button #download-button button{
+	margin-top: 20px;
+  margin-left: 0;
+}
 
 .teamCard {
-  width: 17vw;
-  height: 50vh;
+  width: 16vw;
+  height: 550px;
+  min-width: 280px;
   background-color: white;
-  border-radius: 2px;
+  border-radius: 5px;
   box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.55);
   color: black;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  /* margin: 0.5rem; */
-  z-index: -1;
-  top: 310px;
+  position: relative;
+  margin: 1rem;
+
 }
 
 #content .teamCard h1.name {
@@ -570,13 +572,23 @@ a {
 .teamCard h2 {
   padding: initial 0.5rem 0.75rem;
 }
+#image-shadow{
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+	max-width: 628px;
+	height: 58px;
+	background: radial-gradient(ellipse 38% 30%,rgba(0,0,0,.16),rgba(0,0,0,0));
+  animation: floatShadow 2.3s infinite forwards;
+}
 .teamCard img {
   border-radius: 100%;
   height: 128px;
   margin: 2rem;
   margin-bottom: 1rem;
   box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.55);
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .socials {
@@ -642,8 +654,70 @@ a {
   animation-direction: normal;
 }
 
-#left,
-#right {
-  display: inline-block;
-  width: 100px;
-}
+#cardFlex {
+	display: static;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 80%;
+  }
+
+.teamCard {
+	width: 17vw;
+	height: 550px;
+	background-color: white;
+	border-radius: 2px;
+	box-shadow: 2px 2px 24px 0px rgba(0, 0, 0, 0.55);
+	color: black;
+	margin: 0.5rem;
+  }
+  
+  #content .teamCard h1.name {
+	font-size: 24px;
+	padding: 0.5rem;
+  }
+  
+  .teamCard hr {
+	width: 60%;
+  }
+  
+  .teamCard h2 {
+	padding: initial 0.5rem 0.75rem;
+  }
+  .teamCard img {
+	border-radius: 100%;
+	height: 128px;
+	margin: 2rem;
+	margin-bottom: 1rem;
+	box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, 0.55);
+  }
+  
+  .socials {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-bottom: 1rem;
+	width: 100%;
+  }
+  
+  .socials li a {
+	color: black !important;
+  }
+  
+  .teamCard p {
+	width: 70%;
+	text-align: justify;
+  }
+  
+  .teamCard p.centre {
+	text-align: center;
+  }
+  
+  .teamCard p a {
+	color: var(--blue);
+  }
+  .hide {
+	display: none;
+  }
