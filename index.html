@@ -1,123 +1,163 @@
 <html lang="en-UK">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, height=device-height">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<link rel="stylesheet" type="text/css" href="CSS/mediaQueries.css">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src = "script.js"></script>
-		<script src="https://kit.fontawesome.com/9bfa0f1f0f.js" crossorigin="anonymous"></script>
-		<title>Kontrol - Control Kodi with your body!</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/mediaQueries.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9bfa0f1f0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kontrol - Control Kodi with your body!</title>
+  </head>
 
-	<body>
-		<header>
-			<div id = "desktop-header">
-				<nav>
-					<div class="header-logo">
-						<a href="index.html">
-						<img class = "headerImg" src="Assets/kontrol_logo.svg" alt="Kontrol Logo">
-						<span class = "title">Kontrol</span>
-						</a>
+  <body>
+    <header>
+      <div id="desktop-header">
+        <nav>
+          <div class="header-logo">
+            <a href="index.html">
+              <img
+                class="headerImg"
+                src="Assets/kontrol_logo.svg"
+                alt="Kontrol Logo"
+              />
+              <span class="title">Kontrol</span>
+            </a>
+          </div>
+          <ul class="header-links left-links">
+            <li>
+              <a href="downloads.html">Downloads</a>
+            </li>
+            <li>
+              <a href="team.html">Developers</a>
+            </li>
+            <li>
+              <a href="https://github.com/CMP2804M-Group3/kontrol">Source</a>
+            </li>
+          </ul>
+          <ul class="header-links right-links">
+            <li>
+              <a
+                href="https://github.com/CMP2804M-Group3/kontrol"
+                class="fab fa-github"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:joepittsy@gmail.com?subject=Kontrol"
+                class="fas fa-envelope"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-header">
+        <nav>
+          <div class="header-logo">
+            <img
+              class="headerImg"
+              src="Assets/kontrol_logo.svg"
+              alt="Kontrol Logo"
+            />
+            <span class="title">Kontrol</span>
+          </div>
+          <ul class="header-links left-links"></ul>
+          <ul class="header-links right-links">
+            <input id="burger-checkbox" class="fas fa-bars" type="checkbox" />
+            <label for="burger-checkbox" class="hamburger">
+              <a id="open-burger" class="fas fa-bars"></a>
+            </label>
+            <li>
+              <a href="downloads.html">Downloads</a>
+            </li>
+            <li>
+              <a href="team.html">Developers</a>
+            </li>
+            <li>
+              <a href="https://github.com/CMP2804M-Group3/kontrol">Source</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="content">
+      <h1>A new way to control Kodi with your body.</h1>
+      <p>
+        You're in kontrol, not the remote! Use your movements to Pause, Play,
+        Mute and more. With unlimited customisation make Kontrol truly yours.
+      </p>
+      <div id="buttons">
+        <a
+          id="download-button"
+          href="https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.msi"
+          download
+        >
+          <button class="whiteButton">Download</button>
+        </a>
+        <a href="downloads.html">
+          <button class="blueButton">See all releases</button>
+        </a>
+      </div>
+    </div>
+    <div id="big-kirsty">
+      <img src="Assets/wave.svg" />
+    </div>
+    <section class="video">
+      <div id="video-wrapper">
+        <iframe
+          id="ad"
+          width="660"
+          height="371"
+          src="https://www.youtube.com/embed/gKPZCE8aOzQ?autoplay=0&showinfo=0&controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <div id="bottom-wave">
+      <svg
+        class="wave-1hkxOo"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          class="wavePath-haxJK1"
+          d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z"
+          fill="#f8f9fd"
+        ></path>
+      </svg>
+      <div id="white-out"></div>
+    </div>
+  </body>
 
-					</div>
-					<ul class= "header-links left-links">
-						<li>
-							<a href="downloads.html">Downloads</a>
-						</li>
-						<li>
-							<a>Help</a>
-						</li>
-						<li>
-							<a>Developers</a>
-						</li>
-						<li>
-							<a>Source</a>
-						</li>
-					</ul>
-					<ul class= "header-links right-links">
-						<li>
-							<a href="https://github.com/CMP2804M-Group3/kontrol" class="fab fa-github"></a>
-						</li>
-						<li>
-							<a href="mailto:joepittsy@gmail.com?subject=Kontrol" class="fas fa-envelope"></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-
-			<div id = "mobile-header">
-				<nav>
-					<div class = "header-logo">
-						<img class = "headerImg" src="Assets/kontrol_logo.svg" alt="Kontrol Logo">
-						<span class = "title">Kontrol</span>
-					</div>
-					<ul class= "header-links left-links"></ul>
-					<ul class= "header-links right-links">
-						<input id = "burger-checkbox" class="fas fa-bars" type="checkbox">
-						<label for="burger-checkbox" class="hamburger">
-							<a id = "open-burger" class="fas fa-bars "></a>
-						</label>
-						<li >
-							<a href ="downloads.html" >Downloads</a>
-						</li>
-						<li>
-							<a>Help</a>
-						</li>
-						<li>
-							<a>Developers</a>
-						</li>
-						<li>
-							<a>Source</a>
-						</li>
-					</ul>
-				</nav>
-
-			</div>
-		</header>
-		<div id = "content">
-			<h1> A new way to control Kodi with your body.</h1>
-			<p>You're in kontrol, not the remote! Use your movements to Pause, Play, Mute and more. With unlimited customisation make Kontrol truly yours.</p>
-			<div id = "buttons">
-				<a id = "download-button" href = "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.msi" download>
-					<button  class="whiteButton"> Download</button>
-				</a>
-				<a href="downloads.html">
-					<button class="blueButton">See all releases</button>
-				</a>
-			</div>
-
-		</div>
-		<div id = "big-kirsty">
-			<img src="Assets/wave.svg">
-		</div>
-		<section class = "video">
-			<div id="video-wrapper">
-				<iframe id = "ad" width="660" height="371" src="https://www.youtube.com/embed/1kuwhdtg-Qs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</section>
-		<div id = "bottom-wave">
-			<svg class="wave-1hkxOo" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none"><path class="wavePath-haxJK1" d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="#f8f9fd"></path></svg>
-			<div id = "white-out"></div>
-		</div>
-
-
-	</body>
 </html>
 
 <script>
-	$(document).ready(function(){
-
-		if (isMac){
-			$("#download-button")[0].href = "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.app.zip";
-		}
-		else if (isLinux){
-			$("#download-button")[0].href = "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.deb";
-		}
-		else{ // Fallback to windows
-			$("#download-button")[0].href = "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.msi";
-		}
-
-	});
+  $(document).ready(function () {
+    if (isMac) {
+      $("#download-button")[0].href =
+        "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.app.zip";
+    } else if (isLinux) {
+      $("#download-button")[0].href =
+        "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.deb";
+    } else {
+      // Fallback to windows
+      $("#download-button")[0].href =
+        "https://github.com/CMP2804M-Group3/Kontrol/releases/download/v1.1.0/Kontrol.msi";
+    }
+  });
 </script>
