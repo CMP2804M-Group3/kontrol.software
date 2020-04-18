@@ -27,3 +27,21 @@ $().ready(()=>{
     isLinux = navigator.platform.toUpperCase().indexOf('LINUX')!==-1;
 
 });
+
+$(()=>{
+    $("#left").click(()=>{
+        let heads = $("#heads").children();
+        let middle = heads.length/2;
+
+        var el     = $(heads[Math.floor(middle)]),  
+        newone = el.clone(true);
+              
+        el.before(newone);
+           
+        $("." + el.attr("class") + ":last").remove();
+    
+        $(heads[Math.floor(middle)]).toggleClass("slide-bottom");
+        $(heads[Math.floor(middle)]).toggleClass("slide-top");
+    });
+})
+

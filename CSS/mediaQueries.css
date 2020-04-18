@@ -98,7 +98,7 @@
 
     .dl-card{
         margin: 20px;
-        max-height: 250px;
+        max-height: 270px;
         flex-shrink: 0;
         flex: 1 1 30%;
     }
@@ -111,7 +111,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
     .dl-card{
         flex: initial;

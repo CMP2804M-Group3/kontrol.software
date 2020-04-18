@@ -1,0 +1,244 @@
+<html lang="en-UK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/mediaQueries.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9bfa0f1f0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kontrol - Control Kodi with your body!</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="desktop-header">
+        <nav>
+          <div class="header-logo">
+            <a href="index.html">
+              <img
+                class="headerImg"
+                src="Assets/kontrol_logo.svg"
+                alt="Kontrol Logo"
+              />
+              <span class="title">Kontrol</span>
+            </a>
+          </div>
+          <ul class="header-links left-links">
+            <li>
+              <a href="downloads.html">Downloads</a>
+            </li>
+            <li>
+              <a>Help</a>
+            </li>
+            <li>
+              <a>Developers</a>
+            </li>
+            <li>
+              <a>Source</a>
+            </li>
+          </ul>
+          <ul class="header-links right-links">
+            <li>
+              <a
+                href="https://github.com/CMP2804M-Group3/kontrol"
+                class="fab fa-github"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:joepittsy@gmail.com?subject=Kontrol"
+                class="fas fa-envelope"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="mobile-header">
+        <nav>
+          <div class="header-logo">
+            <img
+              class="headerImg"
+              src="Assets/kontrol_logo.svg"
+              alt="Kontrol Logo"
+            />
+            <span class="title">Kontrol</span>
+          </div>
+          <ul class="header-links left-links"></ul>
+          <ul class="header-links right-links">
+            <input id="burger-checkbox" class="fas fa-bars" type="checkbox" />
+            <label for="burger-checkbox" class="hamburger">
+              <a id="open-burger" class="fas fa-bars"></a>
+            </label>
+            <li>
+              <a href="downloads.html">Downloads</a>
+            </li>
+            <li>
+              <a>Help</a>
+            </li>
+            <li>
+              <a>Developers</a>
+            </li>
+            <li>
+              <a>Source</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="content">
+      <div id="left"><button>left</button></div>
+
+      <div id="heads">
+        <img src="Assets/ben.jpg" id="Ben" />
+        <img src="Assets/joe.jpg" id="Joe" class="slide-bottom selected" />
+        <img src="Assets/bailey.jpg" id="Bailey" />
+      </div>
+      <div id="right"><button>right</button></div>
+
+
+      <div class="teamCard">
+        <img src="Assets/joe.jpg" />
+        <h1 class="name">Joseph Pitts</h1>
+        <h2 class="title">Lead Programmer</h2>
+        <hr />
+        <p>
+          Joe is a second year computer science student at the University of
+          Lincoln. He does other cool stuff, check out his
+          <a href="https://github.com/joepittsy">GitHub.</a>
+        </p>
+        <p>
+          Check out Joe's CV
+          <a href="joepitts.co.uk/Joseph_Pitts_CV.pdf">here</a>.
+        </p>
+        <div class="header-links socials">
+          <li>
+            <a href="https://github.com/joepittsy" class="fab fa-github"></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/joepittsy/"
+              class="fab fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/joepittsy/"
+              class="fab fa-linkedin"
+            ></a>
+          </li>
+          <li>
+            <a href="https://joepitts.co.uk" class="fas fa-globe"></a>
+          </li>
+        </div>
+      </div>
+      <!-- <div id="cardFlex">
+        <div class="teamCard hide">
+          <img src="Assets/joe.jpg" />
+          <h1 class="name">Joseph Pitts</h1>
+          <h2 class="title">Lead Programmer</h2>
+          <hr />
+          <p>
+            Joe is a second year computer science student at the University
+            of Lincoln. He does other cool stuff, check out his <a href="https://github.com/joepittsy">GitHub.</a>
+          </p>
+          <p>Check out Joe's CV <a href = "joepitts.co.uk/Joseph_Pitts_CV.pdf">here</a>.</p>
+          <div class="header-links socials">
+            <li>
+              <a href="https://github.com/joepittsy" class="fab fa-github"></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/joepittsy/"
+                class="fab fa-instagram"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/joepittsy/"
+                class="fab fa-linkedin"
+              ></a>
+            </li>
+            <li>
+              <a href="https://joepitts.co.uk" class="fas fa-globe"></a>
+            </li>
+          </div>
+        </div>
+        <div class="teamCard">
+            <img src="Assets/bailey.jpg" />
+            <h1 class="name">Bailey Symonds</h1>
+            <h2 class="title">Lead UXD Designer</h2>
+            <hr />
+            <p>
+              Bailey is a second year computer science student at the University
+              of Lincoln with a passion for UXD and intrest in HCI.
+            </p>
+            <p>Bailey is looking for work!</p>
+            <div class="header-links socials">
+              <li>
+                <a href="https://github.com/baysym" class="fab fa-github"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/baysym/"
+                  class="fab fa-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/baysym/"
+                  class="fab fa-linkedin"
+                ></a>
+              </li>
+              <li>
+                <a href="https://baysym.github.io" class="fas fa-globe"></a>
+              </li>
+            </div>
+          </div>
+          <div class="teamCard hide">
+            <img src="Assets/ben.jpg" />
+            <h1 class="name">Ben Clarke</h1>
+            <h2 class="title">Programmer</h2>
+            <hr />
+            <p>
+              Ben is stinky.
+            </p>
+            <p>Uh oh poopy</p>
+            <div class="header-links socials">
+              <li>
+                <a href="https://github.com/baysym" class="fab fa-github"></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/baysym/"
+                  class="fab fa-instagram"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/baysym/"
+                  class="fab fa-linkedin"
+                ></a>
+              </li>
+              <li>
+                <a href="https://baysym.github.io" class="fas fa-globe"></a>
+              </li>
+            </div>
+          </div>
+          
+      </div> -->
+    </div>
+  </body>
+</html>
